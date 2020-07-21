@@ -305,6 +305,10 @@ export namespace Components {
     interface DocsRouter {
     }
     interface DocsSearchBar {
+        /**
+          * * the global filter state
+         */
+        "pageData"?: Page;
     }
     interface DocsSecondaryNav {
         /**
@@ -961,6 +965,10 @@ declare namespace LocalJSX {
     interface DocsRouter {
     }
     interface DocsSearchBar {
+        /**
+          * * the global filter state
+         */
+        "pageData"?: Page;
     }
     interface DocsSecondaryNav {
         /**

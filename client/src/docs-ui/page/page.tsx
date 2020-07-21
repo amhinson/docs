@@ -248,6 +248,7 @@ export class DocsPage {
         <Host class={pageStyle}>
           <pageContext.Provider
             state={{
+              pageData: this.pageData,
               selectedFilters: this.selectedFilters,
               setSelectedFilters: this.setSelectedFilters,
               selectedTabHeadings: this.selectedTabHeadings,

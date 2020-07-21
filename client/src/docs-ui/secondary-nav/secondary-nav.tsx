@@ -85,7 +85,7 @@ export class DocsSecondaryNav {
                       ...(external
                         ? {graphic: "black"}
                         : {
-                            childActiveClass: linkActiveStyle,
+                            childActiveClass: `${linkActiveStyle} secondary-nav-active`,
                             additionalActiveChildRoots,
                           }),
                     },
