@@ -310,6 +310,10 @@ export namespace Components {
          */
         "pageData"?: Page;
     }
+    interface DocsSearchBarResultsFooter {
+    }
+    interface DocsSearchResultsPage {
+    }
     interface DocsSecondaryNav {
         /**
           * * the current filter state
@@ -596,6 +600,18 @@ declare global {
         prototype: HTMLDocsSearchBarElement;
         new (): HTMLDocsSearchBarElement;
     };
+    interface HTMLDocsSearchBarResultsFooterElement extends Components.DocsSearchBarResultsFooter, HTMLStencilElement {
+    }
+    var HTMLDocsSearchBarResultsFooterElement: {
+        prototype: HTMLDocsSearchBarResultsFooterElement;
+        new (): HTMLDocsSearchBarResultsFooterElement;
+    };
+    interface HTMLDocsSearchResultsPageElement extends Components.DocsSearchResultsPage, HTMLStencilElement {
+    }
+    var HTMLDocsSearchResultsPageElement: {
+        prototype: HTMLDocsSearchResultsPageElement;
+        new (): HTMLDocsSearchResultsPageElement;
+    };
     interface HTMLDocsSecondaryNavElement extends Components.DocsSecondaryNav, HTMLStencilElement {
     }
     var HTMLDocsSecondaryNavElement: {
@@ -664,6 +680,8 @@ declare global {
         "docs-repo-actions": HTMLDocsRepoActionsElement;
         "docs-router": HTMLDocsRouterElement;
         "docs-search-bar": HTMLDocsSearchBarElement;
+        "docs-search-bar-results-footer": HTMLDocsSearchBarResultsFooterElement;
+        "docs-search-results-page": HTMLDocsSearchResultsPageElement;
         "docs-secondary-nav": HTMLDocsSecondaryNavElement;
         "docs-select-anchor": HTMLDocsSelectAnchorElement;
         "docs-universal-nav": HTMLDocsUniversalNavElement;
@@ -970,6 +988,10 @@ declare namespace LocalJSX {
          */
         "pageData"?: Page;
     }
+    interface DocsSearchBarResultsFooter {
+    }
+    interface DocsSearchResultsPage {
+    }
     interface DocsSecondaryNav {
         /**
           * * the current filter state
@@ -1070,6 +1092,8 @@ declare namespace LocalJSX {
         "docs-repo-actions": DocsRepoActions;
         "docs-router": DocsRouter;
         "docs-search-bar": DocsSearchBar;
+        "docs-search-bar-results-footer": DocsSearchBarResultsFooter;
+        "docs-search-results-page": DocsSearchResultsPage;
         "docs-secondary-nav": DocsSecondaryNav;
         "docs-select-anchor": DocsSelectAnchor;
         "docs-universal-nav": DocsUniversalNav;
@@ -1118,6 +1142,8 @@ declare module "@stencil/core" {
             "docs-repo-actions": LocalJSX.DocsRepoActions & JSXBase.HTMLAttributes<HTMLDocsRepoActionsElement>;
             "docs-router": LocalJSX.DocsRouter & JSXBase.HTMLAttributes<HTMLDocsRouterElement>;
             "docs-search-bar": LocalJSX.DocsSearchBar & JSXBase.HTMLAttributes<HTMLDocsSearchBarElement>;
+            "docs-search-bar-results-footer": LocalJSX.DocsSearchBarResultsFooter & JSXBase.HTMLAttributes<HTMLDocsSearchBarResultsFooterElement>;
+            "docs-search-results-page": LocalJSX.DocsSearchResultsPage & JSXBase.HTMLAttributes<HTMLDocsSearchResultsPageElement>;
             "docs-secondary-nav": LocalJSX.DocsSecondaryNav & JSXBase.HTMLAttributes<HTMLDocsSecondaryNavElement>;
             "docs-select-anchor": LocalJSX.DocsSelectAnchor & JSXBase.HTMLAttributes<HTMLDocsSelectAnchorElement>;
             "docs-universal-nav": LocalJSX.DocsUniversalNav & JSXBase.HTMLAttributes<HTMLDocsUniversalNavElement>;

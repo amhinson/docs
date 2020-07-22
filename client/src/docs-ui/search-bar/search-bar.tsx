@@ -25,28 +25,13 @@ export class DocsSearchBar {
         appId: "38BAH9K7M4",
         apiKey: "fc702841ed6664c00b2077da3c8e906f",
         searchParameters: {
-          // distinct: 1,
           hitsPerPage: 50,
           optionalFilters: filter ? [`section:${filter}`] : undefined,
         },
         // transformItems: transformData,
       });
-      // docsearch({
-      //   apiKey: ALGOLIA_API_KEY,
-      //   indexName: ALGOLIA_INDEX_NAME,
-      //   inputSelector: UNINITIALIZED_SEARCH_INPUT_SELECTOR,
-      //   debug: false,
-      //   transformData,
-      //   algoliaOptions: {
-      //     hitsPerPage: 10,
-      //   },
-      // });
     }
   }
-
-  // componentDidLoad() {
-  //   this.initDocSearch();
-  // }
 
   componentDidRender() {
     const routes = this.pageData ? this.pageData.route.split("/") : [];
@@ -54,7 +39,6 @@ export class DocsSearchBar {
       const section = routes[1];
       this.initDocSearch(section);
     }
-
   }
 
   render() {
