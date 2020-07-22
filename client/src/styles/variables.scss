@@ -42,6 +42,12 @@
   --code-font-color: var(--color-white);
   --code-line-numbers-color: rgba(255, 255, 255, 0.3);
   --font-color-contrast: var(--color-white);
+
+  // https://github.com/francoischalifour/autocomplete.js/blob/next/packages/docsearch-css/src/_variables.css
+  --docsearch-primary-color: var(--primary-color);
+  --docsearch-text-color: var(--color-black);
+  --docsearch-highlight-color: var(--docsearch-primary-color);
+  --docsearch-logo-color: var(--primary-color);
 }
 
 [data-theme="dark"] {

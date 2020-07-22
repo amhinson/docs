@@ -26,10 +26,10 @@ export class DocsSearchBar {
         apiKey: "fc702841ed6664c00b2077da3c8e906f",
         searchParameters: {
           // distinct: 1,
-          hitsPerPage: 25,
+          hitsPerPage: 50,
           optionalFilters: filter ? [`section:${filter}`] : undefined,
         },
-        transformItems: transformData,
+        // transformItems: transformData,
       });
       // docsearch({
       //   apiKey: ALGOLIA_API_KEY,
@@ -61,16 +61,7 @@ export class DocsSearchBar {
     return (
       <Host class={searchStyle}>
         <div>
-          <div>
-            <div id="docsearch"></div>
-            <input
-              id="amplify-docs-search-input"
-              class="three-dee-effect"
-              type="search"
-              placeholder="Search"
-            />
-            <img src="/assets/search.svg" alt="search" />
-          </div>
+          <div id="docsearch"></div>
         </div>
       </Host>
     );
